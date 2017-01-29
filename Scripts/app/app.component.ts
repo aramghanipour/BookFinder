@@ -3,16 +3,18 @@ import { AuthorService } from './author.service';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Author } from './author';
 
+import { Auth } from './auth.service';
+
 @Component({
     selector: 'my-app',
     templateUrl: './Scripts/app/app.component.html',
-    providers: [AuthorService]
+    providers: [AuthorService, Auth]
 })
 
 export class AppComponent implements OnInit {
-    constructor() { }
+    constructor(private auth: Auth) { }
 
-    ngOnInit() : void {
+    ngOnInit(): void {
         console.log('AppComponent called');
     }
 

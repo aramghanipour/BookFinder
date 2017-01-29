@@ -10,8 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var author_service_1 = require("./author.service");
+var auth_service_1 = require("./auth.service");
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(auth) {
+        this.auth = auth;
     }
     AppComponent.prototype.ngOnInit = function () {
         console.log('AppComponent called');
@@ -22,9 +24,9 @@ AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
         templateUrl: './Scripts/app/app.component.html',
-        providers: [author_service_1.AuthorService]
+        providers: [author_service_1.AuthorService, auth_service_1.Auth]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [auth_service_1.Auth])
 ], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
