@@ -9,9 +9,9 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
 var about_component_1 = require("./components/about/about.component");
+var auth_guard_1 = require("./auth.guard");
 var appRoutes = [
-    { path: '', component: app_component_1.AppComponent, pathMatch: 'full' },
-    { path: 'about', component: about_component_1.AboutComponent }
+    { path: 'about', component: about_component_1.AboutComponent, canActivate: [auth_guard_1.AuthGuard] }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -25,4 +25,5 @@ AppRoutingModule = __decorate([
     })
 ], AppRoutingModule);
 exports.AppRoutingModule = AppRoutingModule;
+exports.routedComponents = [about_component_1.AboutComponent, app_component_1.AppComponent];
 //# sourceMappingURL=app-routing.module.js.map

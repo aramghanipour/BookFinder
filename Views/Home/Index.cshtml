@@ -6,10 +6,18 @@
 {
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
     <script src="../../node_modules/core-js/client/shim.min.js"></script>
     <script src="../../node_modules/zone.js/dist/zone.js"></script>
     <script src="../../node_modules/reflect-metadata/Reflect.js"></script>
     <script src="../../node_modules/systemjs/dist/system.src.js"></script>
+    <script src="http://cdn.auth0.com/js/lock/10.10.2/lock.min.js"></script>    
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../Content/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../../Content/Site.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    
 
     <!-- 2. Configure SystemJS -->
     <script src="../../systemjs.config.js"></script>
@@ -17,7 +25,10 @@
         System.import('../../Scripts/app/main').catch(function(err) {console.error(err);});
         //System.import('app').catch(function (err) { console.error(err); });
     </script>
+   
 }
+
+
 
 <my-app>Loading...</my-app>
 
@@ -25,4 +36,3 @@
 {
     
 }
-

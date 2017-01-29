@@ -10,7 +10,10 @@ var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_routing_module_1 = require("./app-routing.module");
-//import { RouterModule, Routes } from '@angular/router';
+var angular2_jwt_1 = require("angular2-jwt");
+var auth_service_1 = require("./auth.service");
+var auth_guard_1 = require("./auth.guard");
+//import { AUTH_PROVIDERS } from 'angular2-jwt/angular2-jwt';
 var app_component_1 = require("./app.component");
 var about_component_1 = require("./components/about/about.component");
 var AppModule = (function () {
@@ -33,6 +36,7 @@ AppModule = __decorate([
         exports: [
             app_component_1.AppComponent
         ],
+        providers: [angular2_jwt_1.AUTH_PROVIDERS, auth_service_1.Auth, auth_guard_1.AuthGuard],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

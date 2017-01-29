@@ -153,6 +153,10 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\background1.jpg" />
+    <Content Include="Content\Images\background2.jpg" />
+    <Content Include="Content\Images\background3.jpg" />
+    <Content Include="Content\materialize.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -165,10 +169,31 @@
     <Content Include="Scripts\app\author.service.js" />
     <Content Include="Scripts\app\components\about\about.component.html" />
     <Content Include="Scripts\app\components\about\about.component.js" />
+    <Content Include="Scripts\app\components\navbar\navbar.component.html" />
     <Content Include="Scripts\app\main.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="package.json" />
+    <Content Include="fonts\roboto\Roboto-Bold.eot" />
+    <Content Include="fonts\roboto\Roboto-Bold.ttf" />
+    <Content Include="fonts\roboto\Roboto-Bold.woff" />
+    <Content Include="fonts\roboto\Roboto-Bold.woff2" />
+    <Content Include="fonts\roboto\Roboto-Light.eot" />
+    <Content Include="fonts\roboto\Roboto-Light.ttf" />
+    <Content Include="fonts\roboto\Roboto-Light.woff" />
+    <Content Include="fonts\roboto\Roboto-Light.woff2" />
+    <Content Include="fonts\roboto\Roboto-Medium.eot" />
+    <Content Include="fonts\roboto\Roboto-Medium.ttf" />
+    <Content Include="fonts\roboto\Roboto-Medium.woff" />
+    <Content Include="fonts\roboto\Roboto-Medium.woff2" />
+    <Content Include="fonts\roboto\Roboto-Regular.eot" />
+    <Content Include="fonts\roboto\Roboto-Regular.ttf" />
+    <Content Include="fonts\roboto\Roboto-Regular.woff" />
+    <Content Include="fonts\roboto\Roboto-Regular.woff2" />
+    <Content Include="fonts\roboto\Roboto-Thin.eot" />
+    <Content Include="fonts\roboto\Roboto-Thin.ttf" />
+    <Content Include="fonts\roboto\Roboto-Thin.woff" />
+    <Content Include="fonts\roboto\Roboto-Thin.woff2" />
     <None Include="Properties\PublishProfiles\Local IIS Website.pubxml" />
     <Content Include="Scripts\app\app-routing.module.js.map" />
     <Content Include="Scripts\app\app.component.js.map" />
@@ -185,6 +210,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\materialize.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -218,9 +244,13 @@
     <TypeScriptCompile Include="Scripts\app\app-routing.module.ts" />
     <TypeScriptCompile Include="Scripts\app\app.component.ts" />
     <TypeScriptCompile Include="Scripts\app\app.module.ts" />
+    <TypeScriptCompile Include="Scripts\app\auth.guard.ts" />
+    <TypeScriptCompile Include="Scripts\app\auth.service.ts" />
     <TypeScriptCompile Include="Scripts\app\author.service.ts" />
     <TypeScriptCompile Include="Scripts\app\author.ts" />
     <TypeScriptCompile Include="Scripts\app\components\about\about.component.ts" />
+    <TypeScriptCompile Include="Scripts\app\components\navbar\navbar.component.ts" />
+    <TypeScriptCompile Include="Scripts\app\components\navbar\navbar.module.ts" />
     <TypeScriptCompile Include="Scripts\app\main.ts" />
   </ItemGroup>
   <ItemGroup>
